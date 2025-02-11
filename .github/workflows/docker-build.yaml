@@ -9,8 +9,8 @@ jobs:
       - name: List files
         run: ls
       - name: Build Docker image
-        run: docker build .
+        run: docker build -t johnbessu/bellimage .
       - name: List Docker images
         run: docker images
       - name: Push Docker image
-        run: docker push
+        run: docker push johnbessu/bellimage
