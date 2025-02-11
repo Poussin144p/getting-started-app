@@ -39,4 +39,4 @@ jobs:
         run: docker images
 
       - name: Push Docker image
-        run: docker push "${{ secrets.DOCKER_USERNAME }}"/:"$NEW_VERSION"
+        run: docker push "${{ secrets.DOCKER_USERNAME }}"/:$NEW_VERSION
