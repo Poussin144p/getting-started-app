@@ -5,9 +5,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: ls 
-
-- checkout code
-- ls
-- docker build 
-- docker images
-- docker push
