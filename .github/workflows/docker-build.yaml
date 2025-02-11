@@ -1,7 +1,13 @@
 name: build-docker
-run: [push]
+on: [push]
 jobs:
   build-docker-image:
     runs-on: ubuntu-latest
     steps:
       - run: ls 
+
+- checkout code
+- ls
+- docker build 
+- docker images
+- docker push
