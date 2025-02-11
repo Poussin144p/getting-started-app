@@ -6,4 +6,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - run: ls
+      - name: List files
+        run: ls
+      - name: Build Docker image
+        run: docker build .
+      - name: List Docker images
+        run: docker images
+      - name: Push Docker image
+        run: docker push
