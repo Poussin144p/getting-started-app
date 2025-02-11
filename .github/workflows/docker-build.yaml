@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        run: checkout code
+        uses: actions/checkout@v2e
       - name: List files
         run: ls
       - name: Build Docker image
